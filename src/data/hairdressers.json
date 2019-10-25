@@ -11,11 +11,79 @@
         "city": "Stockholm"
       },
       "rating": "4",
+      "availableAt": "12:00",
       "closes": "19:00",
       "phone": "08-522 389 20",
       "webUrl": "www.salongweb.se",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea accusantium id amet, molestias aspernatur vel repellendus quibusdam perspiciatis consequuntur tenetur. Corrupti eius fuga incidunt deserunt obcaecati fugiat iure quidem repellendus."
-
+    },
+    {
+      "id": "2",
+      "name": "Hårzint",
+      "price": "320",
+      "time": "30",
+      "address": {
+        "street": "Rådmansgatan 46",
+        "zip": "113 57",
+        "city": "Stockholm"
+      },
+      "rating": "4",
+      "availableAt": "12:00",
+      "closes": "19:00",
+      "phone": "08-522 389 20",
+      "webUrl": "www.salongweb.se",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea accusantium id amet, molestias aspernatur vel repellendus quibusdam perspiciatis consequuntur tenetur. Corrupti eius fuga incidunt deserunt obcaecati fugiat iure quidem repellendus."
+    },
+    {
+      "id": "3",
+      "name": "Hårhuset",
+      "price": "320",
+      "time": "30",
+      "address": {
+        "street": "Rådmansgatan 46",
+        "zip": "113 57",
+        "city": "Stockholm"
+      },
+      "rating": "4",
+      "availableAt": "12:00",
+      "closes": "19:00",
+      "phone": "08-522 389 20",
+      "webUrl": "www.salongweb.se",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea accusantium id amet, molestias aspernatur vel repellendus quibusdam perspiciatis consequuntur tenetur. Corrupti eius fuga incidunt deserunt obcaecati fugiat iure quidem repellendus."
+    },
+    {
+      "id": "4",
+      "name": "Hair & NU",
+      "price": "320",
+      "time": "30",
+      "address": {
+        "street": "Rådmansgatan 46",
+        "zip": "113 57",
+        "city": "Stockholm"
+      },
+      "rating": "4",
+      "availableAt": "12:00",
+      "closes": "19:00",
+      "phone": "08-522 389 20",
+      "webUrl": "www.salongweb.se",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea accusantium id amet, molestias aspernatur vel repellendus quibusdam perspiciatis consequuntur tenetur. Corrupti eius fuga incidunt deserunt obcaecati fugiat iure quidem repellendus."
+    },
+    {
+      "id": "5",
+      "name": "Hårley Davidsson",
+      "price": "320",
+      "time": "30",
+      "address": {
+        "street": "Rådmansgatan 46",
+        "zip": "113 57",
+        "city": "Stockholm"
+      },
+      "rating": "4",
+      "availableAt": "12:00",
+      "closes": "19:00",
+      "phone": "08-522 389 20",
+      "webUrl": "www.salongweb.se",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea accusantium id amet, molestias aspernatur vel repellendus quibusdam perspiciatis consequuntur tenetur. Corrupti eius fuga incidunt deserunt obcaecati fugiat iure quidem repellendus."
     }
   ]
 }

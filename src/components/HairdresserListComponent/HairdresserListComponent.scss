@@ -2,10 +2,12 @@
 
 .hairdresserListContainer {
   width: 100%;
+  overflow: auto;
 
   .hairdresserListContainer__header {
     position: fixed;
     width: 100%;
+    background-color: white;
   }
 
   .header__row {
@@ -27,5 +29,9 @@
       padding: 0;
       border: 0;
     }
+  }
+  .hairdresserList__main {
+    box-sizing: border-box;
+    margin-top: 6.25rem;
   }
 }

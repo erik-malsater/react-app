@@ -1,19 +1,34 @@
 import React from 'react';
 import './HairdresserListComponent.scss';
 import { getHairdressers } from '../../data/hairdressers';
+import ListItemComponent from '../ListItemComponent/ListItemComponent';
 
 interface IHairdresserListState {
-  hairdressers: [];
+  hairdressers: {},
+  isLoading: boolean
 }
 
 class HairdresserListComponent extends React.Component<{}, IHairdresserListState> {
   constructor(props: any) {
     super(props);
     this.state = {
-      hairdressers: []
+      hairdressers: {},
+      isLoading: true,
     }
   }
+
+  componentDidMount = () => {
+    const loadedData = getHairdressers();
+    this.setState({
+      hairdressers: loadedData,
+      isLoading: false
+    })
+  }
+
   render() {
+    if(this.state.isLoading) {
+      return <p>loading...</p>
+    }
     return (
       <div className="hairdresserListContainer">
         <header className="hairdresserListContainer__header">
@@ -33,9 +48,18 @@ class HairdresserListComponent extends React.Component<{}, IHairdresserListState
             </button>
           </div>
         </header>
-        <main>
-          
-
+        <main className="hairdresserList__main">
+          {(this.state.hairdressers as any).hairdressers.map((hairdresser: any) => {
+            return <ListItemComponent 
+                      key={hairdresser.id}
+                      name={hairdresser.name}
+                      price={hairdresser.price}
+                      time={hairdresser.time}
+                      address={hairdresser.address.street}
+                      availableAt={hairdresser.availableAt}
+                      rating={hairdresser.rating}
+                      />
+          })}
         </main>
         
       </div>
