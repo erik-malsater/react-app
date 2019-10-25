@@ -1,3 +1,31 @@
-header {
-  background-color: blue;
+@import '../../styles/style.scss';
+
+.hairdresserListContainer {
+  width: 100%;
+
+  .hairdresserListContainer__header {
+    position: fixed;
+    width: 100%;
+  }
+
+  .header__row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.125rem;
+    border-bottom: 0.5px solid $primaryBorderColor;
+
+    .header__selectedPriceText {
+      font-weight: 300;
+    }
+
+    @include sidePadding;
+
+    .header__button {
+      background-color: transparent;
+      padding: 0;
+      border: 0;
+    }
+  }
 }
