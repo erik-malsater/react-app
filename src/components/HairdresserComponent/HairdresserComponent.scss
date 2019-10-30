@@ -1,0 +1,158 @@
+@import '../../styles/style.scss';
+
+.hairdresserContainer {
+  min-height: 100vh;
+
+  .hairdresserContainer__header {
+    position: relative;
+    height: 13rem;
+    width: 100%;
+    background-image: url("../../images/hairdresser-background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-box-shadow: inset 0px -200px 57px -151px rgba(0,0,0,1);
+            box-shadow: inset 0px -200px 57px -151px rgba(0,0,0,1);
+
+    .header__container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 13rem;
+      width: 100%;
+      padding-bottom: 1rem;
+      @include sidePadding;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+
+    .header__topContainer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      height: 3.125rem;
+    }
+
+    .header__bottomContainer {
+      margin-top: auto;
+      text-align: left;
+      h1 {
+        text-align: left;
+        color: white;
+        font-weight: 300;
+        //font-size: 1.375rem;
+      }
+      
+      .header__starContainer {
+        img {
+          margin-right: 0.1rem;
+        }
+      }
+    }
+  }
+
+  .hairdresserContainer__navbar {
+    position: relative;
+    width: 100%;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    .navbar__tab {
+      width: 50%;
+      height: 3rem;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+
+      .tab__text {
+        font-family: Helvetica;
+      }
+    }
+
+    .navbar__border {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 50%;
+      height: 2px;
+      background-color: $primaryBorderColor;
+    }
+  }
+
+  .hairdresserContainer__gutter {
+    width: 100%;
+    height: 1rem;
+    background-color: #f9f9f9;
+  }
+
+  .hairdresserContainer__main {
+    background-color: white;
+    width: 100%;
+
+    .hairdresserContainer__mainRow {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      position: relative;
+      width: 100%;
+      @include sidePadding;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding-top: 1rem;
+
+      .mainRow__container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+      }
+
+      .mainRow__icon {
+        margin-right: 0.9375rem
+      }
+
+      .mainRow__rightIcon {
+        margin-left: 0.9375rem;
+      }
+
+      .mainRow__border {
+        @include bottomBorder;
+        width: 100%;
+      }
+    }
+    .main__descriptionContainer {
+      @include sidePadding;
+      padding-top: 0.9375rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-flex: 1 1 auto;
+          -ms-flex-positive: 1 1 auto;
+              flex-grow: 1 1 auto;
+    }
+  }
+}

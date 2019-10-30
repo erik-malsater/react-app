@@ -1,0 +1,79 @@
+@import '../../styles/style.scss';
+
+.listItemContainer {
+
+  cursor: pointer;
+
+  @include sidePadding;
+  padding-top: 0.9375rem;
+
+  .listItemContainer__columnContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+
+    .listItemContainer__leftColumn {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+
+    .listItemContainer__rightColumn {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+
+    .listItemContainer__nameColumn {
+      text-align: left;
+      margin-left: 0.9375rem;
+    }
+
+    .nameColumn__ratingContainer {
+      margin-top: 0.75rem;
+      
+      img {
+        margin-right: 0.1rem;
+      }
+    }
+
+    .listItemColumn__availableAtText  {
+      margin-top: 0.25rem;
+    }
+
+    .listItemColumn__addressText {
+      color: $primaryMutedTextColor;
+      margin-top: 0.6875rem;
+    }
+    .listItemColumn__timeText {
+      color: $primaryMutedTextColor;
+      font-size: 0.8125rem;
+      margin-top: 0.6875rem;
+    }
+
+    .listItemColumn__priceText {
+      margin-top: 0.25rem;
+    }
+
+    .listItemContainer__arrowColumn {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-left: 0.9375rem;
+    }
+  }
+
+  .listItem__bottomBorder {
+    margin: 0.9375rem auto 0 auto;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    border-top: 1px solid #eeeeee;
+  } 
+}

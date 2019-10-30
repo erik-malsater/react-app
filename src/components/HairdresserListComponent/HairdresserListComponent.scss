@@ -1,0 +1,78 @@
+@import '../../styles/style.scss';
+
+.hairdresserListContainer {
+  width: 100%;
+  overflow: auto;
+
+  .hairdresserListContainer__header {
+    .hidden {
+      display: none;
+    }
+  }
+
+  .hairdresserListContainer__header {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+  }
+
+  .header__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 3.125rem;
+    border-bottom: 0.5px solid $primaryBorderColor;
+
+    .header__selectedPriceText {
+      font-weight: 300;
+    }
+
+    @include sidePadding;
+
+    .header__button {
+      background-color: transparent;
+      padding: 0;
+      border: 0;
+    }
+  }
+
+  .header__row--pointer {
+    cursor: pointer;
+  }
+
+  .header__priceMenuRow {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-bottom: 0.5px solid $primaryBorderColor;
+    @include sidePadding;
+  }
+
+  .slidecontainer {
+    width: 100%;
+    height: 4rem;
+  }
+
+  .hairdresserList__main {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-top: 6.25rem;
+  }
+}

@@ -1,0 +1,13 @@
+@mixin sidePadding {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  box-sizing: border-box;
+}
+
+@mixin bottomBorder {
+  margin: 0.9375rem auto 0 auto;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+  border-top: 1px solid #eeeeee;
+}
