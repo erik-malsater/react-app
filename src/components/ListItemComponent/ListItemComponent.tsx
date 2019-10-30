@@ -1,7 +1,9 @@
 import React from 'react';
 import './ListItemComponent.scss';
+import { Redirect } from 'react-router';
 
 interface IListItemProps {
+  id: number,
   name: string,
   price: number,
   time: number,
@@ -10,10 +12,40 @@ interface IListItemProps {
   rating: number
 }
 
-class ListItemComponent extends React.Component<IListItemProps, {}> {
+interface IListItemState {
+  toHairdresser: boolean;
+}
+
+class ListItemComponent extends React.Component<IListItemProps, IListItemState> {
+  constructor(props: any) {
+    super(props);
+    this.state = {
+      toHairdresser: false
+    }
+  }
+
+  handleRedirect = () => {
+    this.setState({
+      toHairdresser: true
+    })
+  }
+
   render() {
+
+    if(this.state.toHairdresser) {
+      return <Redirect to={"/hairdresser/" + this.props.id} />
+    }
+
+    let stars = [];
+    for(let i = 0; i < 5; i++) {
+      if(i < this.props.rating) {
+        stars.push(<img key={i} src={require("../../images/filled-star-icon.svg")} alt="Filled star icon"/>)
+      } else {
+        stars.push(<img key={i} src={require("../../images/hollow-star-icon.svg")} alt="Hollow star icon"/>)
+      }
+    }
     return (
-      <div className="listItemContainer">
+      <div className="listItemContainer" onClick={this.handleRedirect}>
         <div className="listItemContainer__columnContainer">
           <div className="listItemContainer__leftColumn">
             <div>
@@ -21,7 +53,7 @@ class ListItemComponent extends React.Component<IListItemProps, {}> {
             </div>
             <div className="listItemContainer__nameColumn">
               <h2>{this.props.name}</h2>
-              <p>{this.props.rating}</p>
+              <div className="nameColumn__ratingContainer">{stars}</div>
               <p className="listItemColumn__addressText">{this.props.address}</p>
             </div>
           </div>

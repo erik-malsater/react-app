@@ -2,6 +2,8 @@
 
 .listItemContainer {
 
+  cursor: pointer;
+
   @include sidePadding;
   padding-top: 0.9375rem;
 
@@ -20,6 +22,14 @@
     .listItemContainer__nameColumn {
       text-align: left;
       margin-left: 0.9375rem;
+    }
+
+    .nameColumn__ratingContainer {
+      margin-top: 0.75rem;
+      
+      img {
+        margin-right: 0.1rem;
+      }
     }
 
     .listItemColumn__availableAtText  {

@@ -5,6 +5,12 @@
   overflow: auto;
 
   .hairdresserListContainer__header {
+    .hidden {
+      display: none;
+    }
+  }
+
+  .hairdresserListContainer__header {
     position: fixed;
     width: 100%;
     background-color: white;
@@ -30,6 +36,30 @@
       border: 0;
     }
   }
+
+  .header__row--pointer {
+    cursor: pointer;
+  }
+
+  .header__priceMenuRow {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 0.5px solid $primaryBorderColor;
+    @include sidePadding;
+  }
+
+  .slidecontainer {
+    width: 100%;
+    height: 4rem;
+
+  }
+  
+  
+
   .hairdresserList__main {
     box-sizing: border-box;
     margin-top: 6.25rem;

@@ -3,14 +3,14 @@
     {
       "id": "1",
       "name": "Sax & Fön",
-      "price": "320",
+      "price": "520",
       "time": "30",
       "address": {
         "street": "Rådmansgatan 46",
         "zip": "113 57",
         "city": "Stockholm"
       },
-      "rating": "4",
+      "rating": "5",
       "availableAt": "12:00",
       "closes": "19:00",
       "phone": "08-522 389 20",
@@ -20,14 +20,14 @@
     {
       "id": "2",
       "name": "Hårzint",
-      "price": "320",
+      "price": "1320",
       "time": "30",
       "address": {
         "street": "Rådmansgatan 46",
         "zip": "113 57",
         "city": "Stockholm"
       },
-      "rating": "4",
+      "rating": "3",
       "availableAt": "12:00",
       "closes": "19:00",
       "phone": "08-522 389 20",
@@ -37,7 +37,7 @@
     {
       "id": "3",
       "name": "Hårhuset",
-      "price": "320",
+      "price": "420",
       "time": "30",
       "address": {
         "street": "Rådmansgatan 46",
@@ -53,8 +53,8 @@
     },
     {
       "id": "4",
-      "name": "Hair & NU",
-      "price": "320",
+      "name": "Hair & Nu",
+      "price": "890",
       "time": "30",
       "address": {
         "street": "Rådmansgatan 46",
@@ -71,7 +71,7 @@
     {
       "id": "5",
       "name": "Hårley Davidsson",
-      "price": "320",
+      "price": "999",
       "time": "30",
       "address": {
         "street": "Rådmansgatan 46",
