@@ -23,14 +23,14 @@
       "price": "1320",
       "time": "30",
       "address": {
-        "street": "Rådmansgatan 46",
+        "street": "Frisyrgatan 12",
         "zip": "113 57",
         "city": "Stockholm"
       },
       "rating": "3",
       "availableAt": "12:00",
-      "closes": "19:00",
-      "phone": "08-522 389 20",
+      "closes": "20:00",
+      "phone": "08-842 349 99",
       "webUrl": "www.salongweb.se",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea accusantium id amet, molestias aspernatur vel repellendus quibusdam perspiciatis consequuntur tenetur. Corrupti eius fuga incidunt deserunt obcaecati fugiat iure quidem repellendus."
     },
@@ -40,14 +40,14 @@
       "price": "420",
       "time": "30",
       "address": {
-        "street": "Rådmansgatan 46",
+        "street": "Tulegatan 46",
         "zip": "113 57",
         "city": "Stockholm"
       },
       "rating": "4",
       "availableAt": "12:00",
-      "closes": "19:00",
-      "phone": "08-522 389 20",
+      "closes": "19:30",
+      "phone": "08-312 289 88",
       "webUrl": "www.salongweb.se",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea accusantium id amet, molestias aspernatur vel repellendus quibusdam perspiciatis consequuntur tenetur. Corrupti eius fuga incidunt deserunt obcaecati fugiat iure quidem repellendus."
     },
@@ -57,15 +57,15 @@
       "price": "890",
       "time": "30",
       "address": {
-        "street": "Rådmansgatan 46",
-        "zip": "113 57",
-        "city": "Stockholm"
+        "street": "Storgatan 3",
+        "zip": "888 11",
+        "city": "Göteborg"
       },
       "rating": "4",
       "availableAt": "12:00",
-      "closes": "19:00",
-      "phone": "08-522 389 20",
-      "webUrl": "www.salongweb.se",
+      "closes": "18:45",
+      "phone": "22-222 119 33",
+      "webUrl": "www.harochnu.se",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea accusantium id amet, molestias aspernatur vel repellendus quibusdam perspiciatis consequuntur tenetur. Corrupti eius fuga incidunt deserunt obcaecati fugiat iure quidem repellendus."
     },
     {

@@ -11,7 +11,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    box-shadow: inset 0px -200px 57px -151px rgba(0,0,0,1);
+    -webkit-box-shadow: inset 0px -200px 57px -151px rgba(0,0,0,1);
+            box-shadow: inset 0px -200px 57px -151px rgba(0,0,0,1);
 
     .header__container {
       position: absolute;
@@ -21,14 +22,25 @@
       width: 100%;
       padding-bottom: 1rem;
       @include sidePadding;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
     }
 
     .header__topContainer {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       height: 3.125rem;
     }
 
@@ -54,13 +66,21 @@
     position: relative;
     width: 100%;
     background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
     .navbar__tab {
       width: 50%;
       height: 3rem;
-      justify-content: center;
-      align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
 
       .tab__text {
@@ -89,15 +109,24 @@
     width: 100%;
 
     .hairdresserContainer__mainRow {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       position: relative;
       width: 100%;
       @include sidePadding;
-      align-items: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       padding-top: 1rem;
 
       .mainRow__container {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 100%;
       }
@@ -118,8 +147,12 @@
     .main__descriptionContainer {
       @include sidePadding;
       padding-top: 0.9375rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-grow: 1 1 auto;
+      -webkit-box-flex: 1 1 auto;
+          -ms-flex-positive: 1 1 auto;
+              flex-grow: 1 1 auto;
     }
   }
 }

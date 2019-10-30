@@ -24,3 +24,10 @@ p {
   font-size: 0.9375rem;
   font-family: Helvetica;
 }
+
+label {
+  font-family: Helvetica;
+  color: $primaryDarkTextColor;
+  font-weight: 300;
+  font-size: 0.9375rem;
+}

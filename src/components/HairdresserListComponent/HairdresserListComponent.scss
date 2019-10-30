@@ -17,10 +17,16 @@
   }
 
   .header__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 3.125rem;
     border-bottom: 0.5px solid $primaryBorderColor;
 
@@ -44,10 +50,17 @@
   .header__priceMenuRow {
     padding-top: 1rem;
     padding-bottom: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     border-bottom: 0.5px solid $primaryBorderColor;
     @include sidePadding;
   }
@@ -55,13 +68,11 @@
   .slidecontainer {
     width: 100%;
     height: 4rem;
-
   }
-  
-  
 
   .hairdresserList__main {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin-top: 6.25rem;
   }
 }
